@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mai Xuan Anh Nhi — Marketing Executive Portfolio</title>
+<meta name="description" content="Portfolio of Mai Xuan Anh Nhi — Marketing Executive at 51Talk Vietnam. KOLs Booking, Social Media, Campaign Management, Event Management.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://static.wixstatic.com">
+<link rel="preconnect" href="https://www.youtube.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0A1F33;
+  --ink-soft: #2D3D52;
+  --ink-mute: #6B7A8E;
+  --cobalt: #1E5FA8;
+  --cobalt-deep: #0A3A6F;
+  --cobalt-light: #4A8BD4;
+  --yellow: #FFD23F;
+  --yellow-soft: #FFE891;
+  --coral: #FF6B47;
+  --cream: #FAF6EE;
+  --cream-deep: #F0E8D8;
+  --white: #FFFFFF;
+  --line: rgba(10, 31, 51, 0.08);
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --container: 1280px;
+  --gutter: clamp(1.25rem, 3vw, 2.5rem);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--cream);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img, video, iframe { max-width: 100%; display: block; }
+img { height: auto; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+::selection { background: var(--yellow); color: var(--ink); }
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* NAV */
+.topnav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(250, 246, 238, 0.85);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.topnav.scrolled { border-color: var(--line); }
+.topnav-inner {
+  max-width: var(--container); margin: 0 auto; padding: 14px var(--gutter);
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.brand {
+  font-family: var(--serif); font-weight: 600; font-size: 17px;
+  letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px;
+}
+.brand-dot {
+  width: 8px; height: 8px; background: var(--coral); border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.3); opacity: 0.6; } }
+.topnav-links { display: flex; gap: 1.4rem; font-size: 13px; font-weight: 500; }
+.topnav-links a {
+  position: relative; padding: 6px 0; color: var(--ink-soft);
+  transition: color 0.2s; white-space: nowrap;
+}
+.topnav-links a::after {
+  content: ''; position: absolute; bottom: 0; left: 0;
+  width: 0; height: 1.5px; background: var(--cobalt);
+  transition: width 0.3s var(--ease-out);
+}
+.topnav-links a:hover { color: var(--cobalt); }
+.topnav-links a:hover::after, .topnav-links a.active::after { width: 100%; }
+.topnav-cta {
+  font-size: 13px; font-weight: 600; background: var(--ink); color: var(--cream);
+  padding: 9px 18px; border-radius: 100px;
+  transition: transform 0.25s var(--ease-out), background 0.25s; white-space: nowrap;
+}
+.topnav-cta:hover { transform: translateY(-1px); background: var(--cobalt-deep); }
+.menu-toggle { display: none; }
+.mobile-menu {
+  position: fixed; inset: 0; background: var(--ink); color: var(--cream);
+  z-index: 200; padding: 80px var(--gutter);
+  display: none; flex-direction: column; gap: 12px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-family: var(--serif); font-size: 1.6rem; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.mobile-menu .close-btn {
+  position: absolute; top: 20px; right: var(--gutter);
+  font-size: 13px; font-weight: 600; padding: 9px 16px;
+  border: 1px solid var(--cream); border-radius: 100px; color: var(--cream);
+}
+@media (max-width: 1100px) {
+  .topnav-links { display: none; }
+  .menu-toggle {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; padding: 9px 16px;
+    border: 1px solid var(--ink); border-radius: 100px;
+  }
+  .topnav-cta { display: none; }
+}
+
+/* HERO */
+.hero { padding: 130px 0 80px; position: relative; overflow: hidden; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 4rem; align-items: center; }
+@media (max-width: 880px) { .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; } .hero { padding: 100px 0 60px; } }
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--cobalt); margin-bottom: 24px; padding: 6px 14px;
+  border: 1px solid var(--cobalt); border-radius: 100px;
+  background: rgba(30, 95, 168, 0.04);
+}
+.hero-eyebrow::before { content: ''; width: 6px; height: 6px; background: var(--coral); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+.hero-title {
+  font-family: var(--serif); font-weight: 300;
+  font-size: clamp(2.6rem, 6.5vw, 5rem); line-height: 0.98;
+  letter-spacing: -0.035em; color: var(--ink); margin-bottom: 1.5rem;
+}
+.hero-title em {
+  font-style: italic; font-weight: 600; color: var(--cobalt);
+  position: relative; display: inline-block;
+}
+.hero-title em::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 6%;
+  height: 0.32em; background: var(--yellow); z-index: -1;
+  transform: scaleX(0); transform-origin: left;
+  animation: swipe 1.2s var(--ease-out) 0.7s forwards;
+}
+@keyframes swipe { to { transform: scaleX(1); } }
+.reveal-word { display: inline-block; opacity: 0; transform: translateY(40px); animation: rise 0.9s var(--ease-out) forwards; }
+@keyframes rise { to { opacity: 1; transform: translateY(0); } }
+.hero-greeting { font-family: var(--serif); font-weight: 600; font-size: 1.35rem; color: var(--cobalt); margin-bottom: 0.6rem; letter-spacing: -0.005em; }
+.hero-lede { font-size: clamp(1rem, 1.3vw, 1.1rem); color: var(--ink-soft); max-width: 520px; margin-bottom: 2rem; line-height: 1.65; }
+.hero-lede strong { color: var(--ink); font-weight: 600; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.25rem; }
+.btn-primary, .btn-ghost, .btn-yellow {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 13px 24px; border-radius: 100px; font-size: 13.5px; font-weight: 600;
+  transition: all 0.3s var(--ease-out); white-space: nowrap;
+}
+.btn-primary { background: var(--ink); color: var(--cream); }
+.btn-primary:hover { background: var(--cobalt-deep); transform: translateY(-2px); box-shadow: 0 12px 28px -10px rgba(10, 58, 111, 0.45); }
+.btn-primary .arrow, .btn-ghost .arrow, .btn-yellow .arrow { transition: transform 0.3s var(--ease-out); }
+.btn-primary:hover .arrow, .btn-ghost:hover .arrow, .btn-yellow:hover .arrow { transform: translateX(4px); }
+.btn-ghost { border: 1.5px solid var(--ink); color: var(--ink); }
+.btn-ghost:hover { background: var(--ink); color: var(--cream); }
+.btn-yellow { background: var(--yellow); color: var(--ink); }
+.btn-yellow:hover { background: var(--ink); color: var(--yellow); transform: translateY(-2px); }
+.hero-contact {
+  display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; font-size: 13px;
+  padding: 16px 20px; background: rgba(30, 95, 168, 0.04);
+  border: 1px solid var(--line); border-radius: 14px; max-width: 460px;
+}
+.hero-contact dt { color: var(--ink-mute); font-weight: 500; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; align-self: center; }
+.hero-contact dd a, .hero-contact dd span { color: var(--ink); font-weight: 500; }
+.hero-contact dd a:hover { color: var(--cobalt); }
+.hero-video {
+  position: relative; aspect-ratio: 9/16; max-width: 420px; width: 100%; margin: 0 auto;
+  border-radius: 24px; overflow: hidden; background: var(--ink);
+  box-shadow: 0 30px 60px -25px rgba(10, 31, 51, 0.4);
+  transform: rotate(2deg); transition: transform 0.5s var(--ease-out); cursor: pointer;
+}
+.hero-video:hover { transform: rotate(0deg) scale(1.02); }
+.hero-video-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.hero-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 2; background: transparent; }
+.hero-video-play {
+  position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 3;
+  width: 60px; height: 60px; border-radius: 50%; background: var(--yellow); color: var(--ink);
+  display: flex; align-items: center; justify-content: center; pointer-events: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3); animation: pulseBtn 2.5s ease-in-out infinite;
+}
+@keyframes pulseBtn { 0%, 100% { transform: translateX(-50%) scale(1); } 50% { transform: translateX(-50%) scale(1.08); } }
+.hero-video-play svg { margin-left: 3px; }
+.hero-video-tag {
+  position: absolute; top: 16px; left: 16px; z-index: 5;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--cream); background: rgba(0,0,0,0.5); padding: 6px 12px;
+  border-radius: 100px; backdrop-filter: blur(10px); pointer-events: none;
+}
+.live-dot { width: 7px; height: 7px; background: var(--coral); border-radius: 50%; animation: pulse 1.5s ease-in-out infinite; }
+
+/* MARQUEE */
+.marquee { background: var(--ink); color: var(--cream); overflow: hidden; padding: 22px 0; }
+.marquee-track {
+  display: flex; gap: 4rem; animation: scroll 35s linear infinite;
+  white-space: nowrap; font-family: var(--serif); font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2.4rem); font-weight: 300;
+}
+.marquee-track span { display: inline-flex; align-items: center; gap: 4rem; }
+.marquee-track .star { color: var(--yellow); font-style: normal; }
+@keyframes scroll { to { transform: translateX(-50%); } }
+
+/* SECTIONS */
+.section { padding: 100px 0; position: relative; }
+@media (max-width: 720px) { .section { padding: 70px 0; } }
+.section-head { margin-bottom: 4rem; display: grid; grid-template-columns: auto 1fr; gap: 3rem; align-items: end; }
+@media (max-width: 720px) { .section-head { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2.5rem; } }
+.section-num { font-family: var(--serif); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 300; font-style: italic; color: var(--cobalt); line-height: 1; }
+.section-title { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.05; letter-spacing: -0.025em; color: var(--ink); }
+.section-title em { font-style: italic; font-weight: 600; color: var(--cobalt); }
+.section-sub { color: var(--ink-mute); font-size: 15px; margin-top: 12px; max-width: 580px; }
+
+/* JOURNEY */
+.journey { background: var(--white); }
+.journey-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+@media (max-width: 1000px) { .journey-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .journey-grid { grid-template-columns: 1fr; } }
+.j-card { background: var(--cream); border-radius: 20px; overflow: hidden; border: 1px solid var(--line); transition: all 0.4s var(--ease-out); display: flex; flex-direction: column; }
+.j-card:hover { transform: translateY(-6px); box-shadow: 0 25px 50px -25px rgba(10, 31, 51, 0.25); border-color: var(--cobalt-light); }
+.j-card-img { aspect-ratio: 5/4; overflow: hidden; position: relative; background: var(--cobalt-deep); }
+.j-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-out); }
+.j-card:hover .j-card-img img { transform: scale(1.06); }
+.j-card-body { padding: 24px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+.j-card-title { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 14px; }
+.j-card ul { font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 18px; flex: 1; }
+.j-card li { padding-left: 14px; position: relative; margin-bottom: 6px; }
+.j-card li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 1.5px; background: var(--cobalt); }
+.j-card li strong { color: var(--ink); font-weight: 600; }
+.j-card-link {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600;
+  letter-spacing: 0.05em; color: var(--cobalt); margin-top: auto; align-self: flex-start;
+  padding: 8px 14px; border: 1px solid var(--cobalt); border-radius: 100px; transition: all 0.3s;
+}
+.j-card-link:hover { background: var(--cobalt); color: var(--cream); }
+
+/* PROJECT SECTIONS */
+.proj-section { position: relative; }
+.proj-section.dark { background: var(--ink); color: var(--cream); }
+.proj-section.dark .section-title { color: var(--cream); }
+.proj-section.dark .section-title em { color: var(--yellow); }
+.proj-section.dark .section-num { color: var(--yellow); }
+.proj-section.dark .section-sub { color: rgba(250, 246, 238, 0.65); }
+.proj-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--cobalt); margin-bottom: 12px; padding: 5px 12px; border: 1px solid var(--cobalt); border-radius: 100px; }
+.dark .proj-tag { color: var(--yellow); border-color: rgba(255, 210, 63, 0.45); }
+
+/* KOLS */
+.kols-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+@media (max-width: 960px) { .kols-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .kols-grid { grid-template-columns: repeat(2, 1fr); } }
+.kol { position: relative; border-radius: 18px; overflow: hidden; aspect-ratio: 3/4; background: var(--ink); display: block; transition: transform 0.4s var(--ease-out); cursor: pointer; }
+.kol:hover { transform: translateY(-6px); }
+.kol img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-out), filter 0.4s; }
+.kol:hover img { transform: scale(1.07); filter: brightness(0.85); }
+.kol-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10, 31, 51, 0.95) 0%, rgba(10, 31, 51, 0.3) 50%, transparent 80%); display: flex; flex-direction: column; justify-content: flex-end; padding: 18px; color: var(--cream); }
+.kol-name { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; letter-spacing: -0.01em; line-height: 1.15; margin-bottom: 8px; }
+.kol-view { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--yellow); opacity: 0; transform: translateY(10px); transition: all 0.4s var(--ease-out); }
+.kol:hover .kol-view { opacity: 1; transform: translateY(0); }
+
+/* GALLERY */
+.gallery { display: grid; gap: 14px; margin-top: 2rem; }
+.gallery-12 { grid-template-columns: repeat(6, 1fr); }
+.gallery-5 { grid-template-columns: repeat(5, 1fr); }
+.gallery-3 { grid-template-columns: repeat(3, 1fr); }
+.gallery-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { .gallery-12, .gallery-5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 540px) { .gallery-12, .gallery-5 { grid-template-columns: repeat(2, 1fr); } .gallery-3 { grid-template-columns: repeat(2, 1fr); } }
+.gallery a, .gallery .gitem { position: relative; display: block; aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; background: var(--cobalt-deep); cursor: zoom-in; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease-out); }
+.gallery a:hover img, .gallery .gitem:hover img { transform: scale(1.07); }
+/* Facebook gallery links — show external icon */
+.gallery a.fb-link::after { content: '↗'; position: absolute; top: 8px; right: 10px; width: 28px; height: 28px; background: var(--yellow); color: var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; opacity: 0; transform: scale(0.6); transition: all 0.3s var(--ease-out); }
+.gallery a.fb-link:hover::after { opacity: 1; transform: scale(1); }
+
+/* RESP CARDS */
+.resp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin: 2.5rem 0; }
+.resp-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; padding: 26px 26px 28px; transition: all 0.4s var(--ease-out); position: relative; }
+.proj-section:not(.dark) .resp-card { background: var(--white); border-color: var(--line); }
+.resp-card:hover { transform: translateY(-4px); border-color: rgba(255, 210, 63, 0.3); }
+.proj-section:not(.dark) .resp-card:hover { border-color: var(--cobalt); box-shadow: 0 20px 40px -20px rgba(10, 31, 51, 0.15); }
+.resp-card h4 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin-bottom: 14px; letter-spacing: -0.01em; }
+.dark .resp-card { color: var(--cream); }
+.resp-card ul { font-size: 13.5px; line-height: 1.55; }
+.dark .resp-card ul { color: rgba(250, 246, 238, 0.78); }
+.proj-section:not(.dark) .resp-card ul { color: var(--ink-soft); }
+.resp-card li { padding-left: 16px; position: relative; margin-bottom: 7px; }
+.resp-card li::before { content: ''; position: absolute; left: 0; top: 9px; width: 6px; height: 1.5px; background: var(--yellow); }
+.proj-section:not(.dark) .resp-card li::before { background: var(--cobalt); }
+.resp-card li strong { font-weight: 600; }
+.dark .resp-card li strong { color: var(--cream); }
+.subsection-head { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; justify-content: space-between; margin: 3rem 0 0.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
+.proj-section:not(.dark) .subsection-head { border-top-color: var(--line); }
+.subsection-head h3 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.85rem); font-weight: 600; letter-spacing: -0.015em; }
+
+/* VIDEO EMBED */
+.video-embed { position: relative; aspect-ratio: 16/9; margin-top: 1.5rem; border-radius: 18px; overflow: hidden; background: var(--ink); box-shadow: 0 20px 50px -25px rgba(10, 31, 51, 0.5); }
+.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.large-img { margin-top: 1.5rem; border-radius: 18px; overflow: hidden; box-shadow: 0 20px 50px -25px rgba(10, 31, 51, 0.5); }
+.large-img img { width: 100%; display: block; }
+.gallery-caption { margin-top: 14px; font-size: 12.5px; color: rgba(250, 246, 238, 0.55); font-style: italic; }
+.proj-section:not(.dark) .gallery-caption { color: var(--ink-mute); }
+.gallery-caption strong { font-style: normal; font-weight: 600; }
+.dark .gallery-caption strong { color: var(--yellow); }
+.proj-section:not(.dark) .gallery-caption strong { color: var(--cobalt); }
+
+/* RESULTS */
+.results { margin-top: 4rem; padding-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); }
+.proj-section:not(.dark) .results { border-top-color: var(--line); }
+.results-label { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--yellow); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 12px; }
+.proj-section:not(.dark) .results-label { color: var(--cobalt); }
+.results-label::before { content: ''; width: 32px; height: 1px; background: currentColor; }
+.results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.result-stat { padding: 24px 0; }
+.result-num { font-family: var(--serif); font-size: clamp(2.5rem, 5vw, 3.75rem); font-weight: 300; letter-spacing: -0.04em; line-height: 1; color: var(--yellow); margin-bottom: 10px; }
+.proj-section:not(.dark) .result-num { color: var(--cobalt); }
+.result-num em { font-style: italic; font-weight: 600; }
+.result-label { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.dark .result-label { color: var(--cream); }
+.result-desc { font-size: 12.5px; line-height: 1.5; }
+.dark .result-desc { color: rgba(250, 246, 238, 0.6); }
+.proj-section:not(.dark) .result-desc { color: var(--ink-mute); }
+
+/* SKILLS */
+.skills-section { background: var(--cream-deep); }
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+@media (max-width: 880px) { .skills-grid { grid-template-columns: 1fr; } }
+.skill-card { background: var(--white); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; transition: all 0.4s var(--ease-out); display: flex; flex-direction: column; }
+.skill-card:hover { transform: translateY(-6px); box-shadow: 0 25px 50px -25px rgba(10, 31, 51, 0.25); }
+.skill-img { aspect-ratio: 4/3; overflow: hidden; background: var(--cobalt-deep); }
+.skill-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-out); }
+.skill-card:hover .skill-img img { transform: scale(1.06); }
+.skill-body { padding: 24px 26px 28px; display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+.skill-body h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; letter-spacing: -0.015em; margin-bottom: 14px; }
+.skill-body .btn-primary { margin-top: auto; font-size: 12.5px; padding: 10px 18px; }
+
+/* CONTACT */
+.contact { padding: 110px 0; background: var(--cream); position: relative; overflow: hidden; }
+.contact::before { content: ''; position: absolute; top: 30%; left: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255, 210, 63, 0.15), transparent 70%); border-radius: 50%; pointer-events: none; }
+.contact-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; align-items: center; position: relative; }
+@media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
+.contact-eyebrow { font-family: var(--serif); font-style: italic; font-size: 1.15rem; font-weight: 600; color: var(--cobalt); margin-bottom: 1rem; }
+.contact-title { font-family: var(--serif); font-size: clamp(2.5rem, 5.5vw, 4.5rem); font-weight: 300; letter-spacing: -0.035em; line-height: 1; margin-bottom: 1.5rem; }
+.contact-title em { font-style: italic; font-weight: 600; color: var(--cobalt); }
+.contact-lede { font-size: 16px; color: var(--ink-soft); max-width: 460px; margin-bottom: 2rem; line-height: 1.65; }
+.contact-cards { display: flex; flex-direction: column; gap: 12px; }
+.contact-row { display: flex; align-items: center; gap: 16px; padding: 18px 22px; background: var(--white); border: 1px solid var(--line); border-radius: 14px; transition: all 0.3s var(--ease-out); }
+.contact-row:hover { border-color: var(--cobalt); transform: translateX(4px); }
+.contact-row svg { flex-shrink: 0; color: var(--cobalt); }
+.contact-row-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mute); display: block; margin-bottom: 2px; }
+.contact-row-value { font-size: 14.5px; color: var(--ink); font-weight: 500; }
+
+/* FOOTER */
+.footer { background: var(--ink); color: var(--cream); padding: 70px 0 40px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+@media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; gap: 2rem; } }
+.footer-name { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1; letter-spacing: -0.02em; margin-bottom: 8px; }
+.footer-name em { font-style: italic; color: var(--yellow); font-weight: 600; }
+.footer-role { font-size: 14px; color: rgba(250, 246, 238, 0.6); letter-spacing: 0.05em; }
+.footer h5 { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(250, 246, 238, 0.5); margin-bottom: 16px; }
+.footer ul li { margin-bottom: 8px; }
+.footer ul a { font-size: 14px; color: rgba(250, 246, 238, 0.85); transition: color 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+.footer ul a:hover { color: var(--yellow); }
+.footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(250, 246, 238, 0.4); }
+
+/* SCROLL ANIMATIONS */
+.fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.fade-up.in-view { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+
+/* LIGHTBOX */
+.lightbox { position: fixed; inset: 0; background: rgba(8, 20, 33, 0.95); backdrop-filter: blur(8px); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 2rem; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; cursor: zoom-out; }
+.lightbox.open { opacity: 1; visibility: visible; }
+.lightbox-content { position: relative; max-width: min(92vw, 1200px); max-height: 88vh; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; transform: scale(0.94); transition: transform 0.45s var(--ease-out); cursor: default; }
+.lightbox.open .lightbox-content { transform: scale(1); }
+.lightbox-img { max-width: 100%; max-height: 78vh; width: auto; height: auto; object-fit: contain; border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,0.5); display: block; }
+.lightbox-close { position: absolute; top: 20px; right: 20px; width: 46px; height: 46px; border-radius: 50%; background: rgba(255,255,255,0.12); color: var(--cream); font-size: 26px; line-height: 1; font-weight: 300; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.25s ease; z-index: 10; }
+.lightbox-close:hover { background: var(--yellow); color: var(--ink); transform: rotate(90deg); }
+.lightbox-link { display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; background: var(--yellow); color: var(--ink); border-radius: 100px; font-size: 13px; font-weight: 600; letter-spacing: 0.02em; transition: transform 0.2s ease, background 0.2s ease; cursor: pointer; border: none; }
+.lightbox-link:hover { transform: translateY(-2px); background: var(--cream); }
+.lightbox-link[hidden] { display: none; }
+.lightbox-loader { position: absolute; top: 50%; left: 50%; margin: -20px 0 0 -20px; width: 40px; height: 40px; border: 3px solid rgba(255,255,255,0.2); border-top-color: var(--yellow); border-radius: 50%; animation: spin 0.8s linear infinite; pointer-events: none; opacity: 0; transition: opacity 0.2s; }
+.lightbox.loading .lightbox-loader { opacity: 1; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Social layout */
+@media (max-width: 880px) { .social-layout { grid-template-columns: 1fr !important; } }
+</style>
+</head>
+<body>
+
+<!-- ============ FACEBOOK LINK OPENER (IFRAME-SAFE) ============ -->
+<!--
+  fbLink(url) — opens a Facebook URL safely even inside Wix iframe.
+  Strategy: tries window.open with noopener (works when Wix allows popups),
+  falls back to creating a real <a> element and dispatching a click on it,
+  which some sandbox configs allow via user gesture. Last resort: navigate top.
+-->
+<script>
+function fbLink(url) {
+  // Strategy 1: plain window.open triggered by real user click
+  var w = window.open(url, '_blank', 'noopener,noreferrer');
+  if (w) { w.focus(); return; }
+
+  // Strategy 2: try navigating top frame
+  try {
+    window.top.location.href = url;
+    return;
+  } catch(e) {}
+
+  // Strategy 3: create real anchor + click (user-gesture chain)
+  var a = document.createElement('a');
+  a.href = url;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function(){ document.body.removeChild(a); }, 200);
+}
+</script>
+
+<!-- NAV -->
+<nav class="topnav" id="topnav">
+  <div class="topnav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-dot"></span>
+      Mai Xuan Anh Nhi
+    </a>
+    <ul class="topnav-links">
+      <li><a href="#journey">My Journey</a></li>
+      <li><a href="#kols">51Talk · KOLs Booking</a></li>
+      <li><a href="#social">51Talk · Social Media</a></li>
+      <li><a href="#term1">Dancenter Campaign 1</a></li>
+      <li><a href="#term2">Dancenter Campaign 2</a></li>
+      <li><a href="#event">Dancenter · Event</a></li>
+    </ul>
+    <a href="#contact" class="topnav-cta">Contact →</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      Menu
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu">Close</button>
+    <a href="#journey">My Journey</a>
+    <a href="#kols">51Talk · KOLs Booking</a>
+    <a href="#social">51Talk · Social Media</a>
+    <a href="#term1">Campaign 1</a>
+    <a href="#term2">Campaign 2</a>
+    <a href="#event">Dancenter · Event</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow">Marketing Executive · Available now</span>
+        <h1 class="hero-title">
+          <span class="reveal-word" style="animation-delay: 0.1s">Welcome</span>
+          <span class="reveal-word" style="animation-delay: 0.2s">to</span>
+          <span class="reveal-word" style="animation-delay: 0.3s">my</span>
+          <br>
+          <span class="reveal-word" style="animation-delay: 0.45s"><em>portfolio</em>!</span>
+        </h1>
+        <p class="hero-greeting">Dear Recruiter,</p>
+        <p class="hero-lede">Explore my work to see what I've achieved. I'd love the chance to connect and interview to see if I'd be a great fit for your company!</p>
+        <div class="hero-actions">
+          <a href="#journey" class="btn-primary">Explore work <span class="arrow">→</span></a>
+          <a href="#contact" class="btn-ghost">Contact me</a>
+        </div>
+        <dl class="hero-contact">
+          <dt>Email</dt>
+          <dd><a href="mailto:Maixuananhnhi@gmail.com">Maixuananhnhi@gmail.com</a></dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:0853552449">0853552449</a></dd>
+          <dt>Location</dt>
+          <dd><span>Binh Trung Ward, Thu Duc City</span></dd>
+        </dl>
+      </div>
+      <div class="hero-video" id="heroVideo">
+        <span class="hero-video-tag"><span class="live-dot"></span>Video Introduction</span>
+        <img class="hero-video-poster"
+             src="https://img.youtube.com/vi/IvUr0VWPHbA/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://img.youtube.com/vi/IvUr0VWPHbA/hqdefault.jpg'"
+             alt="Video Introduction — Mai Xuan Anh Nhi" loading="eager">
+        <span class="hero-video-play" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+        <iframe
+          src="https://www.youtube.com/embed/IvUr0VWPHbA?autoplay=1&mute=1&loop=1&playlist=IvUr0VWPHbA&controls=1&modestbranding=1&rel=0&playsinline=1"
+          title="Video Introduction" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="eager"></iframe>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>KOLs Booking <em class="star">✦</em> Social Media <em class="star">✦</em> Campaign Strategy <em class="star">✦</em> Event Management <em class="star">✦</em> Content Production <em class="star">✦</em> Performance Ads <em class="star">✦</em></span>
+    <span>KOLs Booking <em class="star">✦</em> Social Media <em class="star">✦</em> Campaign Strategy <em class="star">✦</em> Event Management <em class="star">✦</em> Content Production <em class="star">✦</em> Performance Ads <em class="star">✦</em></span>
+  </div>
+</div>
+
+<!-- SECTION 01 — JOURNEY -->
+<section class="section journey" id="journey">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <div>
+        <h2 class="section-title">My Journey to Becoming a <em>Marketer</em></h2>
+        <p class="section-sub">Four key experiences have laid the foundation for my passion for marketing:</p>
+      </div>
+    </div>
+    <div class="journey-grid">
+      <article class="j-card fade-up">
+        <div class="j-card-img">
+          <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_24b54d2821df4216965464e1840ddef4~mv2.jpg/v1/fill/w_612,h_492,fp_0.35_0.51,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/z6165387310738_bf1b253a0cbc28e0a2fb8de5e74a31da.jpg" alt="Open University HCMC graduation">
+        </div>
+        <div class="j-card-body">
+          <h3 class="j-card-title">Open University HCMC<br><span style="font-weight:400; font-size:.85em; color:var(--ink-mute)">(studied from 9/2020 - 5/2024)</span></h3>
+          <ul>
+            <li><strong>Education:</strong> Majored in Business Administration, where I discovered my passion for Marketing.</li>
+            <li><strong>Learning Experience:</strong> Gained both theoretical and practical knowledge through guidance from experienced educators and dynamic collaboration with classmates.</li>
+          </ul>
+          <a href="http://kqtkd.ou.edu.vn/" target="_blank" rel="noopener" class="j-card-link">View Website →</a>
+        </div>
+      </article>
+      <article class="j-card fade-up">
+        <div class="j-card-img">
+          <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_3e7c88a5c61e4264aaddde8622378ad9~mv2.jpg/v1/fill/w_612,h_492,fp_0.47_0.57,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5373_edited.jpg" alt="Enuy Corporation team">
+        </div>
+        <div class="j-card-body">
+          <h3 class="j-card-title">Enuy Corporation<br><span style="font-weight:400; font-size:.85em; color:var(--ink-mute)">(worked from 11/2022 - 9/2023)</span></h3>
+          <ul>
+            <li><strong>Planning:</strong> Developing content production plans for various media channels.</li>
+            <li><strong>Creating and executing video content:</strong> From initial brief to on-set production.</li>
+            <li><strong>Managing online advertising:</strong> Running campaigns on Facebook and TikTok.</li>
+            <li><strong>Leadership:</strong> Supporting 3 interns.</li>
+          </ul>
+          <a href="https://nuy.com.vn/" target="_blank" rel="noopener" class="j-card-link">View Website →</a>
+        </div>
+      </article>
+      <article class="j-card fade-up">
+        <div class="j-card-img">
+          <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_b645d0fddfb24db185f72d0b46f00138~mv2.jpg/v1/fill/w_612,h_492,fp_0.50_0.47,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSCF9409_edited.jpg" alt="Dancenter team">
+        </div>
+        <div class="j-card-body">
+          <h3 class="j-card-title">Dancenter<br><span style="font-weight:400; font-size:.85em; color:var(--ink-mute)">(work from 10/2023 - 04/2024)</span></h3>
+          <ul>
+            <li><strong>Content creation</strong> and production follow-up.</li>
+            <li><strong>Cross-department communication</strong> for marketing alignment.</li>
+            <li><strong>Planning and managing</strong> offline marketing events and shows.</li>
+            <li><strong>Vendor management</strong> with printers and agencies.</li>
+          </ul>
+          <a href="https://www.dancentervn.com/" target="_blank" rel="noopener" class="j-card-link">View Website →</a>
+        </div>
+      </article>
+      <article class="j-card fade-up">
+        <div class="j-card-img">
+          <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_3c92715a64ac420393ec57ea67540de8~mv2.jpg/v1/fill/w_576,h_463,fp_0.77_0.59,lg_1,q_80,enc_avif,quality_auto/51Talk%20CV.jpg" alt="51Talk Vietnam">
+        </div>
+        <div class="j-card-body">
+          <h3 class="j-card-title">51Talk Vietnam<br><span style="font-weight:400; font-size:.85em; color:var(--ink-mute)">(Work from 05/2025 - Present)</span></h3>
+          <ul>
+            <li>Monitored KPIs and optimized social media content</li>
+            <li>Negotiated KOLs/KOCs and managed collaborations</li>
+            <li>Built and managed social media campaigns</li>
+          </ul>
+          <a href="https://vi.51talk.com/" target="_blank" rel="noopener" class="j-card-link">View Website →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 02 — KOLs BOOKING -->
+<!-- 
+  KOL cards: dùng onclick="fbLink(...)" thay vì href trực tiếp
+  Đây là cách duy nhất hoạt động trong Wix iframe với Facebook links
+-->
+<section class="section proj-section dark" id="kols">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <div>
+        <span class="proj-tag">51Talk Vietnam</span>
+        <h2 class="section-title">KOLs, KOCs <em>Booking</em></h2>
+        <p class="section-sub"><strong style="color: var(--cream); font-weight: 600;">Responsibilities:</strong> Conduct research, develop creative briefs, coordinate with teams, negotiate with partners, and oversee end-to-end project execution.</p>
+      </div>
+    </div>
+    <div class="kols-grid">
+      <div class="kol fade-up" onclick="fbLink('https://www.facebook.com/reel/1518922949313370')" role="link" tabindex="0" aria-label="Xem video Diễn viên Đinh Ngọc Diệp trên Facebook">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_5b3752d49ed44661809cf28d588ec395~mv2.jpg/v1/crop/x_26,y_48,w_597,h_779/fill/w_553,h_779,fp_0.50_0.50,q_85,enc_avif,quality_auto/z7163647163307_d6b5031b0b9930daf5851c542d99d9e6.jpg" alt="Diễn viên Đinh Ngọc Diệp">
+        <div class="kol-overlay">
+          <div class="kol-name">Diễn viên Đinh Ngọc Diệp</div>
+          <span class="kol-view">View ↗</span>
+        </div>
+      </div>
+      <div class="kol fade-up" onclick="fbLink('https://www.facebook.com/vantrang0103/videos/1490698608888822')" role="link" tabindex="0" aria-label="Xem video Diễn viên Vân Trang trên Facebook">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_f60075688bed41838711b915303da2bc~mv2.jpg/v1/crop/x_6,y_210,w_605,h_756/fill/w_537,h_756,fp_0.50_0.50,q_85,enc_avif,quality_auto/VanTrang.jpg" alt="Diễn viên Vân Trang">
+        <div class="kol-overlay">
+          <div class="kol-name">Diễn viên Vân Trang</div>
+          <span class="kol-view">View ↗</span>
+        </div>
+      </div>
+      <div class="kol fade-up" onclick="fbLink('https://www.facebook.com/truongmynhan.official/videos/1113920114025669/')" role="link" tabindex="0" aria-label="Xem video Trương Mỹ Nhân trên Facebook">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_beee5703e857426aacf308683b510b7e~mv2.jpg/v1/crop/x_50,y_175,w_589,h_728/fill/w_517,h_728,fp_0.50_0.50,q_85,enc_avif,quality_auto/z6986770819597_37e2766d3e44e6cea569c1ea9fb15321.jpg" alt="Trương Mỹ Nhân">
+        <div class="kol-overlay">
+          <div class="kol-name">Trương Mỹ Nhân</div>
+          <span class="kol-view">View ↗</span>
+        </div>
+      </div>
+      <div class="kol fade-up" onclick="fbLink('https://www.facebook.com/hoanganhtuh2t/videos/1339094544886796/')" role="link" tabindex="0" aria-label="Xem video Hoàng Anh Tú trên Facebook">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_5f6a56743f0e40858d16d28f52704bb9~mv2.jpg/v1/crop/x_15,y_194,w_595,h_736/fill/w_523,h_736,fp_0.50_0.50,q_85,enc_avif,quality_auto/z6986770768664_792d80e73a84c3d0e60e9bfbd43d7d2c.jpg" alt="Hoàng Anh Tú (Chánh Văn)">
+        <div class="kol-overlay">
+          <div class="kol-name">Hoàng Anh Tú (Chánh Văn)</div>
+          <span class="kol-view">View ↗</span>
+        </div>
+      </div>
+      <div class="kol fade-up" onclick="fbLink('https://www.facebook.com/FansieFamily/videos/757063503711286')" role="link" tabindex="0" aria-label="Xem video Fansie Family trên Facebook">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_8cb9acd433ef4de7bfa685e185ea8acf~mv2.jpg/v1/fill/w_487,h_602,q_85,enc_avif,quality_auto/z6986770768664.jpg" alt="Fansie Family" onerror="this.src='https://static.wixstatic.com/media/1c996e_8cb9acd433ef4de7bfa685e185ea8acf~mv2.jpg'">
+        <div class="kol-overlay">
+          <div class="kol-name">Fansie Family</div>
+          <span class="kol-view">View ↗</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 03 — SOCIAL MEDIA -->
+<section class="section" id="social" style="background: var(--white);">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <div>
+        <span class="proj-tag">51Talk Vietnam</span>
+        <h2 class="section-title">Social Media <em>Plan</em></h2>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 3rem; align-items: start;" class="social-layout">
+      <div>
+        <h4 style="font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">My Responsibilities:</h4>
+        <ul style="margin-bottom: 1.75rem;">
+          <li style="padding-left: 16px; position: relative; margin-bottom: 10px; color: var(--ink-soft); line-height: 1.55;">
+            <span style="position: absolute; left: 0; top: 9px; width: 6px; height: 1.5px; background: var(--cobalt); display: block;"></span>
+            Create a Plan, write content 5-7 posts/week, design
+          </li>
+          <li style="padding-left: 16px; position: relative; margin-bottom: 10px; color: var(--ink-soft); line-height: 1.55;">
+            <span style="position: absolute; left: 0; top: 9px; width: 6px; height: 1.5px; background: var(--cobalt); display: block;"></span>
+            Built and managed Facebook, increasing reach by <strong style="color: var(--ink);">60%</strong> and growing followers by <strong style="color: var(--ink);">25% (+4340)</strong> within 3 months.
+          </li>
+        </ul>
+        <a href="https://docs.google.com/spreadsheets/d/1M3djyjW_ltaK89vQwx6Ezl6tChgP0EBo/edit?usp=sharing&ouid=103238383691949080697&rtpof=true&sd=true" target="_blank" rel="noopener" class="btn-primary">
+          View Plan <span class="arrow">→</span>
+        </a>
+      </div>
+      <div>
+        <!-- Social gallery: dùng .gitem (không phải <a>) vì không cần link ra ngoài -->
+        <div class="gallery gallery-12">
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_af3b236a31cb44ae8ce8a918085b08b5~mv2.jpg/v1/fill/w_147,h_230,q_90,enc_avif,quality_auto/1c996e_af3b236a31cb44ae8ce8a918085b08b5~mv2.jpg" alt="Social post 1"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_cd817846a9f34186a14842527c8bf125~mv2.jpg/v1/fill/w_147,h_272,q_90,enc_avif,quality_auto/1c996e_cd817846a9f34186a14842527c8bf125~mv2.jpg" alt="Social post 2"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_6982fa929756473cbb9e4da868de0979~mv2.jpg/v1/fill/w_148,h_234,q_90,enc_avif,quality_auto/1c996e_6982fa929756473cbb9e4da868de0979~mv2.jpg" alt="Social post 3"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_e299cbfab7a0480bb877c4937f9e07ef~mv2.jpg/v1/fill/w_147,h_215,q_90,enc_avif,quality_auto/1c996e_e299cbfab7a0480bb877c4937f9e07ef~mv2.jpg" alt="Social post 4"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_f9434deb866e45179142f2dbaf03ca0b~mv2.jpg/v1/fill/w_147,h_230,q_90,enc_avif,quality_auto/1c996e_f9434deb866e45179142f2dbaf03ca0b~mv2.jpg" alt="Social post 5"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_87aefb8759ca44758822a8310775f681~mv2.jpg/v1/fill/w_147,h_233,q_90,enc_avif,quality_auto/1c996e_87aefb8759ca44758822a8310775f681~mv2.jpg" alt="Social post 6"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_a39266d8b0a24130aaa5f94f4c1b56c3~mv2.jpg/v1/fill/w_148,h_236,q_90,enc_avif,quality_auto/1c996e_a39266d8b0a24130aaa5f94f4c1b56c3~mv2.jpg" alt="Social post 7"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_03dfdad47d964df4b15930557e0360de~mv2.jpg/v1/fill/w_147,h_230,q_90,enc_avif,quality_auto/1c996e_03dfdad47d964df4b15930557e0360de~mv2.jpg" alt="Social post 8"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_4a3e8668c94c4b9c9db3907f28e60dfb~mv2.jpg/v1/fill/w_147,h_211,q_90,enc_avif,quality_auto/1c996e_4a3e8668c94c4b9c9db3907f28e60dfb~mv2.jpg" alt="Social post 9"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_fb6307c1df83439bbd8ffeaefeeca475~mv2.jpg/v1/fill/w_147,h_216,q_90,enc_avif,quality_auto/1c996e_fb6307c1df83439bbd8ffeaefeeca475~mv2.jpg" alt="Social post 10"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_a06c4dc372a44793909c9f46b9e90590~mv2.jpg/v1/fill/w_148,h_234,q_90,enc_avif,quality_auto/1c996e_a06c4dc372a44793909c9f46b9e90590~mv2.jpg" alt="Social post 11"></div>
+          <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_d95967db5b474795894d810381a51b99~mv2.jpg/v1/fill/w_147,h_231,q_90,enc_avif,quality_auto/1c996e_d95967db5b474795894d810381a51b99~mv2.jpg" alt="Social post 12"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 04 — DANCENTER TERM 1 -->
+<section class="section proj-section dark" id="term1">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <div>
+        <span class="proj-tag">Dancenter · Campaign Term 1 · 2024/25</span>
+        <h2 class="section-title">CAMPAIGN: Dance For <em>All</em> 2024/25</h2>
+        <p class="section-sub"><strong style="color: var(--cream); font-weight: 600;">Objective:</strong> Promote the Foundation Term (September to December) to encourage new students to join the class to learn technique dance</p>
+      </div>
+    </div>
+
+    <div class="subsection-head">
+      <h3>Content (Video)</h3>
+      <a href="https://youtube.com/playlist?list=PLyZgRxg2ygPNlBttkJHnNEaNWutMmkSxw&feature=shared" target="_blank" rel="noopener" class="btn-yellow">View videos <span class="arrow">→</span></a>
+    </div>
+    <p style="color: rgba(250,246,238,0.7); margin-top: 0.5rem;"><strong style="color: var(--cream);">My Responsibilities:</strong></p>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>Briefs & Production</h4>
+        <ul>
+          <li><strong>Write briefs:</strong> 6 videos based on key ideas</li>
+          <li><strong>Plan timeline:</strong> Organize production filming</li>
+        </ul>
+      </div>
+      <div class="resp-card">
+        <h4>Distribution & Ads</h4>
+        <ul>
+          <li><strong>Distribute content:</strong> Sales, partner media, social media</li>
+          <li><strong>Manage advertising:</strong> Oversee online ads</li>
+        </ul>
+      </div>
+    </div>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/yt7wd-b_XDo?rel=0&modestbranding=1&playsinline=1" title="Dance For All - Campaign Video" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <div class="subsection-head">
+      <h3>Website</h3>
+      <a href="https://www.dancentervn.com/" target="_blank" rel="noopener" class="btn-yellow">View Website <span class="arrow">→</span></a>
+    </div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>Implementation</h4>
+        <ul>
+          <li><strong>Execute page implementation:</strong> As assigned</li>
+          <li><strong>Propose layout:</strong> Select suitable information for the landing page</li>
+          <li><strong>Create content:</strong> Collect and generate content for the page</li>
+        </ul>
+      </div>
+    </div>
+    <div class="large-img">
+      <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_fd0012da20db4e3490e16a2c4a620727~mv2.jpg/v1/fill/w_1380,h_796,fp_0.49_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Web.jpg" alt="Dancenter website screenshot">
+    </div>
+
+    <div class="subsection-head"><h3>Content (Visual, Text)</h3></div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>Strategy & Briefing</h4>
+        <ul>
+          <li><strong>Plan social media posts:</strong> Develop a content calendar and strategy</li>
+          <li><strong>Generate ideas:</strong> Provide detailed briefs for the designer</li>
+          <li><strong>Write post content:</strong> Craft engaging and audience-focused copy</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Gallery Term1 Visual: dùng onclick fbLink -->
+    <div class="gallery gallery-5">
+      <div class="gitem fb-link" onclick="fbLink('https://www.facebook.com/DancenterVietnam/posts/pfbid027C2KHxCcAXcu6A1UJWsKP4fQ95ppxaUsn1BuJNPKYg6rn4x8DwgaScNjGPWY2ntsl')" style="cursor:pointer;">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_d6e09049d9cf4a45b8a31dcedb7f7198~mv2.jpg/v1/fit/w_416,h_440,q_90,enc_avif,quality_auto/1c996e_d6e09049d9cf4a45b8a31dcedb7f7198~mv2.jpg" alt="Dance For All post 1">
+      </div>
+      <div class="gitem fb-link" onclick="fbLink('https://www.facebook.com/DancenterVietnam/posts/pfbid02kQnBC63fFNhjh1pcMyd2Bjk4HzS4a7Z1yy3QJeBpXosPm31thuovPhggkMCrVYwWl')" style="cursor:pointer;">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_f019734679dd4a42b90eb144bfe9bc7c~mv2.jpg/v1/fit/w_415,h_440,q_90,enc_avif,quality_auto/1c996e_f019734679dd4a42b90eb144bfe9bc7c~mv2.jpg" alt="Dance For All post 2">
+      </div>
+      <div class="gitem fb-link" onclick="fbLink('https://www.facebook.com/DancenterVietnam/videos/1217585049254741')" style="cursor:pointer;">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_750902d054aa4934957902f0bcf6399c~mv2.jpg/v1/fit/w_495,h_440,q_90,enc_avif,quality_auto/1c996e_750902d054aa4934957902f0bcf6399c~mv2.jpg" alt="Dance For All video 1">
+      </div>
+      <div class="gitem fb-link" onclick="fbLink('https://www.facebook.com/DancenterVietnam/videos/515972590869052')" style="cursor:pointer;">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_853071c912424dfdae39c42476929d67~mv2.jpg/v1/fit/w_448,h_440,q_90,enc_avif,quality_auto/1c996e_853071c912424dfdae39c42476929d67~mv2.jpg" alt="Dance For All video 2">
+      </div>
+      <div class="gitem fb-link" onclick="fbLink('https://www.facebook.com/DancenterVietnam/posts/pfbid0TfFLfcTqk88dh8WiyWTGp9MwEG6gYD8eSAcfxxfhE95j4AnqRtyHXivUyCisaCDrl')" style="cursor:pointer;">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_e0ac0afc51864bd3bf9a74ae576f237d~mv2.jpg/v1/fit/w_390,h_440,q_90,enc_avif,quality_auto/1c996e_e0ac0afc51864bd3bf9a74ae576f237d~mv2.jpg" alt="Dance For All post 3">
+      </div>
+    </div>
+
+    <div class="subsection-head"><h3>POSM</h3></div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>Production Workflow</h4>
+        <ul>
+          <li><strong>Brainstorm key visuals:</strong> Work closely with the design team to develop impactful concepts</li>
+          <li><strong>Coordinate production:</strong> Collaborate with billboard rental agencies and printers for execution</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery gallery-3">
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_4ee3e683ae0e4f8c9531cba1e960bf3b~mv2.jpg/v1/fit/w_437,h_437,q_90,enc_avif,quality_auto/1c996e_4ee3e683ae0e4f8c9531cba1e960bf3b~mv2.jpg" alt="Street Flag 1"></div>
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_66bc2cfe4e6a442da9a96ca5e3f401f0~mv2.jpg/v1/fit/w_437,h_437,q_90,enc_avif,quality_auto/1c996e_66bc2cfe4e6a442da9a96ca5e3f401f0~mv2.jpg" alt="Street Flag 2"></div>
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_7d694bae109847f39b5ec132f9d169a3~mv2.jpg/v1/fit/w_491,h_437,q_90,enc_avif,quality_auto/1c996e_7d694bae109847f39b5ec132f9d169a3~mv2.jpg" alt="Street Flag 3"></div>
+    </div>
+    <div class="gallery-caption"><strong>Street Flag</strong> · A total of 80 street flags were put up across the Thảo Điền area</div>
+
+    <div class="subsection-head">
+      <h3>Online Advertising</h3>
+      <div class="gitem fb-link" onclick="fbLink('https://www.facebook.com/DancenterVietnam/posts/pfbid02xeGcYomu3AFyS2F3fbirUcfmuH4ZpjVavD4BE89HVAED9thnXBaBumfDvQYvgi7yl')" style="cursor:pointer; display:inline-flex; align-items:center; gap:10px; padding:13px 24px; border-radius:100px; font-size:13.5px; font-weight:600; background:var(--yellow); color:var(--ink);">View ad <span>→</span></div>
+    </div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>Campaign Management</h4>
+        <ul>
+          <li><strong>Propose online advertising plans:</strong> Define budget, timeline, and target audience</li>
+          <li><strong>Manage Facebook Ads campaigns:</strong> Execute and optimize for performance</li>
+          <li><strong>Track and analyze results:</strong> Monitor campaigns and provide performance reports</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery gallery-3">
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_838c671c2b2d4b3db75993a23df07821~mv2.jpg/v1/fit/w_440,h_440,q_90,enc_avif,quality_auto/1c996e_838c671c2b2d4b3db75993a23df07821~mv2.jpg" alt="Online Ad 1"></div>
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_7daa84bad9614abea164373e7f63f15f~mv2.jpg/v1/fit/w_440,h_440,q_90,enc_avif,quality_auto/1c996e_7daa84bad9614abea164373e7f63f15f~mv2.jpg" alt="Online Ad 2"></div>
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_fd52af17919c4773bc734bc49a91e057~mv2.jpg/v1/fit/w_440,h_440,q_90,enc_avif,quality_auto/1c996e_fd52af17919c4773bc734bc49a91e057~mv2.jpg" alt="Online Ad 3"></div>
+    </div>
+
+    <div class="results">
+      <div class="results-label">Results</div>
+      <div class="results-grid">
+        <div class="result-stat">
+          <div class="result-num" data-count="30" data-suffix="%"><em>0%</em></div>
+          <div class="result-label">student growth achieved</div>
+          <div class="result-desc">Successfully Attracted More Students Than Last Year.</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-num" data-count="50" data-suffix="%"><em>0%</em></div>
+          <div class="result-label">New students</div>
+          <div class="result-desc">Achieved 50% new registrations while maintaining a 60% retention rate from the previous school year.</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-num"><em>70-100%</em></div>
+          <div class="result-label">Class Capacity</div>
+          <div class="result-desc">Class capacity increased from 60% in 2023/24 to an average of 70-100%.</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-num" data-count="7000" data-suffix="+"><em>0+</em></div>
+          <div class="result-label">Digital Engagements</div>
+          <div class="result-desc">Over 7,000 interactions from web traffic, social media posts, and messaging platforms.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 05 — ADDITIONAL SKILLS -->
+<section class="section skills-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <div><h2 class="section-title">Additional <em>Skills</em></h2></div>
+    </div>
+    <div class="skills-grid">
+      <article class="skill-card fade-up">
+        <div class="skill-img">
+          <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_a90cd037741b490ca6977ce37dcf70cc~mv2.jpg/v1/fill/w_634,h_826,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/491951023_1329147955881897_3395211454222979686.jpg" alt="Design work">
+        </div>
+        <div class="skill-body">
+          <h3>Design</h3>
+          <!-- Facebook link via fbLink -->
+          <div onclick="fbLink('https://www.facebook.com/DancenterVietnam/posts/pfbid02xeGcYomu3AFyS2F3fbirUcfmuH4ZpjVavD4BE89HVAED9thnXBaBumfDvQYvgi7yl')" class="btn-primary" style="cursor:pointer; margin-top:auto;">View more <span class="arrow">→</span></div>
+        </div>
+      </article>
+      <article class="skill-card fade-up">
+        <div class="skill-img">
+          <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_819657025cee4bc0a9e11f89b32322af~mv2.jpg/v1/fill/w_634,h_826,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/z6528245229305_ef33887ad9d4409eb078d6728492e3a.jpg" alt="Filming and editing">
+        </div>
+        <div class="skill-body">
+          <h3>Filming &amp; Edit</h3>
+          <div onclick="fbLink('https://www.facebook.com/reel/1157862462763399')" class="btn-primary" style="cursor:pointer; margin-top:auto;">View more <span class="arrow">→</span></div>
+        </div>
+      </article>
+      <article class="skill-card fade-up">
+        <div class="skill-img">
+          <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_aef3d610b5f448d28fc01f0c995564a7~mv2.jpg/v1/crop/x_55,y_0,w_561,h_731/fill/w_561,h_731,fp_0.50_0.50,q_85,enc_avif,quality_auto/z6528278029475_995cd21aea821c05.jpg" alt="Video content coordination">
+        </div>
+        <div class="skill-body">
+          <h3>Video content coordination</h3>
+          <div onclick="fbLink('https://www.facebook.com/DancenterVietnam/videos/1689709311672974')" class="btn-primary" style="cursor:pointer; margin-top:auto;">View more <span class="arrow">→</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 06 — DANCENTER TERM 2 -->
+<section class="section proj-section dark" id="term2">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <div>
+        <span class="proj-tag">Dancenter · Campaign Term 2 · 2024/25</span>
+        <h2 class="section-title">CAMPAIGN: Join Our Studio,<br>Shine On <em>Stage</em> 2024/25</h2>
+        <p class="section-sub"><strong style="color: var(--cream); font-weight: 600;">Objective:</strong> Promote the Performance Term (January to March) to encourage new students to join the class and perform in the Annual Show organized by Dancenter.</p>
+      </div>
+    </div>
+
+    <div class="subsection-head"><h3>Content (Video)</h3></div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>My Responsibilities</h4>
+        <ul>
+          <li>Compose briefs based on the key idea.</li>
+          <li>Negotiate pricing and follow up with outsourced editors.</li>
+          <li>Distribute content to partner media, social media, and manage online advertising.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/hrpPvef02OI?rel=0&modestbranding=1&playsinline=1" title="Shine On Stage - Campaign Video" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <div class="subsection-head">
+      <h3>Landing Page</h3>
+      <a href="https://www.dancentervn.com/stage" target="_blank" rel="noopener" class="btn-yellow">View Landing Page <span class="arrow">→</span></a>
+    </div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>My Responsibilities</h4>
+        <ul>
+          <li>Plan layout and select suitable information for the landing page.</li>
+          <li>Collect and create content for the page.</li>
+          <li>Execute the landing page implementation.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="large-img">
+      <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_2dc9e66d5c0c453fa843927a319de2b6~mv2.jpg/v1/fill/w_1380,h_752,fp_0.29_0.33,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/z6189210229525_444b7a8e97b4629d2d7094.jpg" alt="Shine On Stage landing page">
+    </div>
+
+    <div class="subsection-head"><h3>Content (Visual, Text)</h3></div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>My Responsibilities</h4>
+        <ul>
+          <li>Create ideas and provide briefs to the designer.</li>
+          <li>Write content for posts.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery gallery-3">
+      <div class="gitem fb-link" onclick="fbLink('https://www.facebook.com/DancenterVietnam/posts/pfbid02YX1P6LDp9bNbtQ7DnQYP3hz9sTrWatqB17rnTMJKPDTGg2Yo3ihqpwj4xWHsHvvUl')" style="cursor:pointer;">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_59c1a6adfd844e56b987ee600f77b3e9~mv2.jpg/v1/fit/w_345,h_440,q_90,enc_avif,quality_auto/1c996e_59c1a6adfd844e56b987ee600f77b3e9~mv2.jpg" alt="Shine On Stage post 1">
+      </div>
+      <div class="gitem fb-link" onclick="fbLink('https://fb.watch/wPw32u5UFW/')" style="cursor:pointer;">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_cabe10dbb9024deab53c9a163b65900c~mv2.jpg/v1/fit/w_388,h_440,q_90,enc_avif,quality_auto/1c996e_cabe10dbb9024deab53c9a163b65900c~mv2.jpg" alt="Shine On Stage post 2">
+      </div>
+      <div class="gitem">
+        <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_572c9f72ad5c4098b694245978a1058f~mv2.jpg/v1/fit/w_490,h_440,q_90,enc_avif,quality_auto/1c996e_572c9f72ad5c4098b694245978a1058f~mv2.jpg" alt="Shine On Stage post 3">
+      </div>
+    </div>
+
+    <div class="subsection-head"><h3>POSM</h3></div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>My Responsibilities</h4>
+        <ul>
+          <li>Brainstorm with the design team for the key visual.</li>
+          <li>Collaborate with billboard rental agencies and printers.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery gallery-3">
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_bc5473d1eac94b98aba8da87c89332b9~mv2.jpg/v1/fit/w_437,h_437,q_90,enc_avif,quality_auto/1c996e_bc5473d1eac94b98aba8da87c89332b9~mv2.jpg" alt="POSM 1"></div>
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_044f25cee55941efb1df6745259eba48~mv2.jpg/v1/fit/w_437,h_437,q_90,enc_avif,quality_auto/1c996e_044f25cee55941efb1df6745259eba48~mv2.jpg" alt="POSM 2"></div>
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_afc1344cb4184a45a09ed363f950564b~mv2.jpg/v1/fit/w_437,h_437,q_90,enc_avif,quality_auto/1c996e_afc1344cb4184a45a09ed363f950564b~mv2.jpg" alt="POSM 3"></div>
+    </div>
+    <div class="gallery-caption"><strong>An Phu Supermarket</strong> · Dimension: 1.8 x 2.5 (meter)</div>
+
+    <div class="subsection-head"><h3>Online Advertising</h3></div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>My Responsibilities</h4>
+        <ul>
+          <li>Propose online advertising plan: Including budget, timeline, and target audience.</li>
+          <li>Execute Facebook Ads campaigns.</li>
+          <li>Track and report on campaign performance.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery gallery-2">
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_6789c610e628473ca2d9753ad7d9338f~mv2.jpg/v1/fit/w_440,h_440,q_90,enc_avif,quality_auto/1c996e_6789c610e628473ca2d9753ad7d9338f~mv2.jpg" alt="Online Ad 1"></div>
+      <div class="gitem"><img loading="lazy" src="https://static.wixstatic.com/media/1c996e_f2a46d0109f94036908e9f601ced4243~mv2.jpg/v1/fit/w_440,h_440,q_90,enc_avif,quality_auto/1c996e_f2a46d0109f94036908e9f601ced4243~mv2.jpg" alt="Online Ad 2"></div>
+    </div>
+
+    <div class="results">
+      <div class="results-label">Results</div>
+      <div class="results-grid">
+        <div class="result-stat">
+          <div class="result-num" data-count="80" data-suffix="%"><em>0%</em></div>
+          <div class="result-label">Retention</div>
+          <div class="result-desc">Retention student from term 1</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-num" data-count="10" data-suffix="%"><em>+0%</em></div>
+          <div class="result-label">Increase New students</div>
+          <div class="result-desc">Achieved a 10% increase in new comers</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-num" data-count="5000" data-suffix="+"><em>0+</em></div>
+          <div class="result-label">Digital Engagements</div>
+          <div class="result-desc">Over 5,000 interactions from web traffic, social media posts, and messaging platforms.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 07 — EVENT POWER -->
+<section class="section" id="event" style="background: var(--white);">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">07</span>
+      <div>
+        <span class="proj-tag">Dancenter · Annual Show · 2024</span>
+        <h2 class="section-title">EVENT: <em>POWER</em><br>Dancenter Annual Show 2024</h2>
+        <p class="section-sub"><strong style="color: var(--ink); font-weight: 600;">Objective:</strong> Organize the Annual Show that brings together all Dancenter students to perform on stage, showcasing various dance styles for parents and the Ho Chi Minh dance community.</p>
+      </div>
+    </div>
+    <div class="subsection-head" style="border-top: 1px solid var(--line); margin-top: 0;">
+      <h3 style="color: var(--ink);">Communication</h3>
+    </div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>My Responsibilities</h4>
+        <ul>
+          <li><strong>Audience Communication:</strong> Create materials to engage the audience before and after shows.</li>
+          <li><strong>Show Promotion:</strong> Run online advertising campaigns and develop promotional materials, including banners and programs (POSM).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/Cj8gPT-3Ico?rel=0&modestbranding=1&playsinline=1" title="POWER - Dancenter Annual Show 2024" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="subsection-head" style="border-top: 1px solid var(--line);">
+      <h3 style="color: var(--ink);">Event Management</h3>
+      <a href="https://docs.google.com/spreadsheets/d/1Iepa20ivmdmCGgqrjISgdPdlty5q1Ai2/edit?usp=sharing&ouid=103238383691949080697&rtpof=true&sd=true" target="_blank" rel="noopener" class="btn-primary">View Plan <span class="arrow">→</span></a>
+    </div>
+    <div class="resp-grid" style="margin-top: 1rem;">
+      <div class="resp-card">
+        <h4>My Responsibilities</h4>
+        <ul>
+          <li><strong>Human Resource Coordination:</strong> Contact ticket sales agencies, helpers, photographers, and other necessary personnel.</li>
+          <li><strong>Material Preparation:</strong> Develop guidelines for helpers, and ensure smooth operations.</li>
+          <li><strong>Audience Support:</strong> Provide assistance and manage audience interactions during the show.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="large-img">
+      <img loading="lazy" src="https://static.wixstatic.com/media/1c996e_24e6592406f34546b29e5efb29910d24~mv2.jpg/v1/fill/w_1361,h_874,al_c,q_85,enc_avif,quality_auto/z6196556911055_6122c6f3c83088addd921724543ac61b.jpg" alt="POWER show event management">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <p class="contact-eyebrow">Dear Recruiter,</p>
+        <h2 class="contact-title">Let's <em>connect</em>.</h2>
+        <p class="contact-lede">Explore my work to see what I've achieved. I'd love the chance to connect and interview to see if I'd be a great fit for your company!</p>
+        <a href="mailto:Maixuananhnhi@gmail.com" class="btn-primary">Email me <span class="arrow">→</span></a>
+      </div>
+      <div class="contact-cards">
+        <a href="mailto:Maixuananhnhi@gmail.com" class="contact-row">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div>
+            <span class="contact-row-label">Email</span>
+            <span class="contact-row-value">Maixuananhnhi@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:0853552449" class="contact-row">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <span class="contact-row-label">Phone</span>
+            <span class="contact-row-value">0853552449</span>
+          </div>
+        </a>
+        <div class="contact-row">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <span class="contact-row-label">Location</span>
+            <span class="contact-row-value">Binh Trung Ward, Thu Duc City</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-name">Mai Xuan <em>Anh Nhi</em></div>
+        <div class="footer-role">Marketing Executive</div>
+        <div style="margin-top: 1rem; font-size: 13px; color: rgba(250,246,238,0.6); line-height: 1.7;">
+          Binh Trung Ward, Thu Duc City<br>
+          <a href="mailto:Maixuananhnhi@gmail.com" style="color: rgba(250,246,238,0.85);">Maixuananhnhi@gmail.com</a><br>
+          0853552449
+        </div>
+      </div>
+      <div>
+        <h5>Sections</h5>
+        <ul>
+          <li><a href="#journey">My Journey</a></li>
+          <li><a href="#kols">51Talk · KOLs Booking</a></li>
+          <li><a href="#social">51Talk · Social Media</a></li>
+          <li><a href="#term1">Campaign 1</a></li>
+          <li><a href="#term2">Campaign 2</a></li>
+          <li><a href="#event">Dancenter · Event</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/maixuannhi/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://www.instagram.com/nhimaisie/" target="_blank" rel="noopener">Instagram ↗</a></li>
+          <li><a href="https://www.facebook.com/maixuananhnhi/" target="_blank" rel="noopener">Facebook ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Mai Xuan Anh Nhi. All work showcased.</span>
+      <span>Built for direct conversation.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+  <div class="lightbox-loader" aria-hidden="true"></div>
+  <div class="lightbox-content" id="lightboxContent">
+    <img class="lightbox-img" id="lightboxImg" alt="">
+    <!-- Nếu ảnh trong lightbox có fb-link thì show nút này -->
+    <button class="lightbox-link" id="lightboxFbBtn" hidden>Xem trên Facebook ↗</button>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   NAV SCROLL
+   ============================================================ */
+const topnav = document.getElementById('topnav');
+window.addEventListener('scroll', () => {
+  topnav.classList.toggle('scrolled', window.scrollY > 8);
+}, { passive: true });
+
+/* ============================================================
+   MOBILE MENU
+   ============================================================ */
+const menuToggle = document.getElementById('menuToggle');
+const closeMenu  = document.getElementById('closeMenu');
+const mobileMenu = document.getElementById('mobileMenu');
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => mobileMenu.classList.add('open'));
+  closeMenu.addEventListener('click',  () => mobileMenu.classList.remove('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  });
+}
+
+/* ============================================================
+   SCROLL REVEALS
+   ============================================================ */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); revealObserver.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => revealObserver.observe(el));
+
+/* ============================================================
+   ANIMATED COUNTERS
+   ============================================================ */
+function animateCount(el) {
+  if (el.dataset.counted === 'true') return;
+  const target = parseInt(el.dataset.count, 10);
+  const suffix = el.dataset.suffix || '';
+  if (isNaN(target)) return;
+  el.dataset.counted = 'true';
+  const em = el.querySelector('em') || el;
+  const hasPrefix = em.textContent.trim().startsWith('+');
+  const prefix = hasPrefix ? '+' : '';
+  const duration = 1500;
+  const start = performance.now();
+  function tick(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const value = Math.floor(target * eased);
+    em.textContent = prefix + value.toLocaleString() + suffix;
+    if (progress < 1) requestAnimationFrame(tick);
+    else em.textContent = prefix + target.toLocaleString() + suffix;
+  }
+  requestAnimationFrame(tick);
+}
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); countObserver.unobserve(e.target); } });
+}, { threshold: 0.4 });
+document.querySelectorAll('.result-num[data-count]').forEach(el => countObserver.observe(el));
+
+/* ============================================================
+   SMOOTH SCROLL
+   ============================================================ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    if (href === '#' || href.length < 2) return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
+    }
+  });
+});
+
+/* ============================================================
+   ACTIVE NAV HIGHLIGHT
+   ============================================================ */
+const sections  = document.querySelectorAll('section[id], header[id]');
+const navLinks  = document.querySelectorAll('.topnav-links a');
+const sectionObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.id;
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+    }
+  });
+}, { rootMargin: '-50% 0px -50% 0px' });
+sections.forEach(s => sectionObs.observe(s));
+
+/* ============================================================
+   KEYBOARD SUPPORT FOR KOL CARDS (onclick divs)
+   ============================================================ */
+document.querySelectorAll('[role="link"]').forEach(el => {
+  el.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      el.click();
+    }
+  });
+});
+
+/* ============================================================
+   LIGHTBOX — chỉ mở cho ảnh .gitem (không phải fb-link)
+   ============================================================ */
+(function() {
+  const lightbox    = document.getElementById('lightbox');
+  const lbImg       = document.getElementById('lightboxImg');
+  const lbClose     = document.getElementById('lightboxClose');
+  const lbContent   = document.getElementById('lightboxContent');
+  const lbFbBtn     = document.getElementById('lightboxFbBtn');
+  if (!lightbox) return;
+
+  function getFullSize(src) {
+    const match = src.match(/^(https:\/\/static\.wixstatic\.com\/media\/[^/]+)/);
+    return match ? match[1] : src;
+  }
+
+  function openLightbox(src, fbUrl) {
+    lightbox.removeAttribute('hidden');
+    lightbox.classList.add('loading');
+    lbImg.src = '';
+    const fullSrc = getFullSize(src);
+    const preload = new Image();
+    preload.onload  = () => { lbImg.src = fullSrc; lightbox.classList.remove('loading'); };
+    preload.onerror = () => { lbImg.src = src;     lightbox.classList.remove('loading'); };
+    preload.src = fullSrc;
+
+    if (fbUrl) {
+      lbFbBtn.removeAttribute('hidden');
+      lbFbBtn.onclick = () => fbLink(fbUrl);
+    } else {
+      lbFbBtn.setAttribute('hidden', '');
+    }
+
+    requestAnimationFrame(() => lightbox.classList.add('open'));
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { lightbox.setAttribute('hidden', ''); lbImg.src = ''; }, 320);
+  }
+
+  // Chỉ bind lightbox cho .gitem KHÔNG có class fb-link và không có onclick
+  // fb-link items đã có onclick fbLink → họ mở Facebook trực tiếp, không mở lightbox
+  document.querySelectorAll('.gallery .gitem:not(.fb-link)').forEach(item => {
+    item.addEventListener('click', e => {
+      const img = item.querySelector('img');
+      if (!img) return;
+      openLightbox(img.src, null);
+    });
+  });
+
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox || e.target === lbContent) closeLightbox();
+  });
+  lbClose.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+  });
+})();
+</script>
+</body>
+</html>
